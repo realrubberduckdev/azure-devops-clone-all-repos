@@ -49,7 +49,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Download build artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ADOSCloneAllRepos
       - name: Setup .NET Core
